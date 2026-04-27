@@ -3,4 +3,5 @@ addpaymentOutput:https://github.com/Ajjayya0421/CollegeFeeWebApp/blob/master/add
 viewpaymentlisOutput:https://github.com/Ajjayya0421/CollegeFeeWebApp/blob/master/viewpaymentlist.png
 updateFeePaymentOutput:https://github.com/Ajjayya0421/CollegeFeeWebApp/blob/master/updateFeePayment.png
 updateFeePayment.1Output:https://github.com/Ajjayya0421/CollegeFeeWebApp/blob/master/updateFeePayment.1.png
+DeleteFeePayment:https://github.com/Ajjayya0421/CollegeFeeWebApp/blob/master/DeleteFeePayment.png
 
