@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
+    <display-name>College Fee Payment System</display-name>
+    <description>Web application for managing college fee payments</description>
+    
+    <!-- Welcome file list -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+    <!-- Servlet mappings (if not using annotations) -->
+    <servlet>
+        <servlet-name>AddFeePaymentServlet</servlet-name>
+        <servlet-class>com.servlet.AddFeePaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFeePaymentServlet</servlet-name>
+        <url-pattern>/AddFeePaymentServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateFeePaymentServlet</servlet-name>
+        <servlet-class>com.servlet.UpdateFeePaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateFeePaymentServlet</servlet-name>
+        <url-pattern>/UpdateFeePaymentServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteFeePaymentServlet</servlet-name>
+        <servlet-class>com.servlet.DeleteFeePaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFeePaymentServlet</servlet-name>
+        <url-pattern>/DeleteFeePaymentServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DisplayFeePaymentsServlet</servlet-name>
+        <servlet-class>com.servlet.DisplayFeePaymentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayFeePaymentsServlet</servlet-name>
+        <url-pattern>/DisplayFeePaymentsServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>com.servlet.ReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/ReportServlet</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Session timeout in minutes -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <!-- Error pages -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/index.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/index.jsp</location>
+    </error-page>
+    
+</web-app>
